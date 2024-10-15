@@ -21,7 +21,7 @@ export default function GifSearch() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [offset, setOffset] = useState(0);
-  const [hasMore, setHasMore] = useState(true);
+  const [hasMore, setHasMore] = useState(false);
 
   const searchGifs = useCallback(async (term: string, offsetValue: number) => {
     // To prevent unnecessary API calls and not show load more button for empty search term
