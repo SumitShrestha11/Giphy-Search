@@ -1,5 +1,11 @@
+import GifSearch from "./components/custom/GifSearch";
+
 function App() {
-  return <>hello</>;
+  return (
+    <>
+      <GifSearch />
+    </>
+  );
 }
 
 export default App;
